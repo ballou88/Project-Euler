@@ -18,7 +18,6 @@ list = Array.new
   num1, num2 = amicable?(n)
   if num1 != num2
     list << num1 << num2
-    p "#{num1} #{num2}"
   end
 end
 p list.uniq!.inject(0){|sum,n| sum+n}
