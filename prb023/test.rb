@@ -17,6 +17,6 @@ abundent = Set.new
 sum = 0
 (1..28123).each do |n|
   abundent.add(n) if n.abundent?
-  sum += n unless abundent.any?{|m| abundent.include?(m-a)}
+  sum += n unless abundent.any?{|m| abundent.include?(n-m)}
 end
 p sum
